@@ -1,0 +1,7 @@
+asi = ["Matemáticas", "Física", "Química", "Historia", "Lengua"]# Lista de asignaturas
+ns = {}# Diccionario para almacenar las notas
+for a in asi:#se repetrira mientras "a" esta en "asi"
+    n=float(input(f"¿Qué nota has sacado en {a}? "))# Preguntar al usuario la nota de cada asignatura
+    ns[a] = n#"ns" adentro "a" es igual a  "n"
+for a, n in ns.items():#se repetira si "a" y "n" estan en ns.items
+    print(f"En {a} has sacado {n}")# Mostrar las notas de cada asignatura
