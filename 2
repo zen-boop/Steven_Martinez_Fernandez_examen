@@ -1,0 +1,9 @@
+asi= {'Matemáticas': 6, 'Física': 4, 'Química': 5}# Diccionario con los créditos de las asignaturas
+t=0# Inicializar el total de créditos
+for a in asi.keys():#se repite mientras "a" este en "asi.keys"
+    ca=float(input(f"Introduce la calificación para {a}: "))# Preguntar al usuario la calificación de cada asignatura
+    asi[a]=ca# "asi"adentro "a" es igual a "ca"
+for a, c in asi.items():#se realiza si "a" y "c" estan en "asi.items"
+    print(f"{a} tiene {c} créditos")# Mostrar los créditos de cada asignatura
+    t+=c#el "t" es igual a "c"
+print(f"Número total de créditos del curso: {t}")# Mostrar el número total de créditos del curso
