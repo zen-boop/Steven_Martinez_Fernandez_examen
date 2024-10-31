@@ -1,0 +1,12 @@
+asi=["Matemáticas", "Física", "Química", "Historia", "Lengua"]# Lista de asignaturas
+ns={}# Diccionario para almacenar las notas
+for a in asi:# Preguntar al usuario la nota de cada asignatura
+    n=float(input(f"¿Qué nota has sacado en {a}? "))#añade valor a la n la define como FLOAT
+    ns[a]=n#añade el valor de "n" a "ns" en "a"
+ar = [a for a in asi if ns[a] < 5]# Eliminar las asignaturas aprobadas (nota >= 5)
+if ar:# Mostrar las asignaturas que el usuario tiene que repetir si reprobo
+    print("Tienes que repetir las siguientes asignaturas:")#imprime que tienes que repetir asignaturas
+    for a in ar:#se repetira mientras a este en ar
+        print(a)
+else:#si no se cumple muestra eso
+    print("¡Felicidades! Has aprobado todas las asignaturas.")#da la instruccion de que no reprobaste nada
